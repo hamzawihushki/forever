@@ -8,7 +8,7 @@ export default function NewsLetterBox() {
     return (
         <div>
             <div className='flex flex-col text-center justify-center  '>
-                <p className='text-gray-700 text-medium text-2xl'>Subscribe now & get 20% off</p>
+                <p className='text-gray-700 text-medium text-3xl'>Subscribe now & get 20% off</p>
                 <p className='text-gray-500 mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <form onSubmit={submitHandler} className='flex flex-1  items-center mx-auto my-6   pl-3 w-full sm:w-1/2 '>

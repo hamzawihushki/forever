@@ -10,12 +10,17 @@ import Order from "./pages/Order";
 import NavBar from "./components/NavBar";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
+import SearchBar from "./components/SearchBar";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <ToastContainer autoClose={2000} />
       <NavBar />
-
+      <SearchBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -24,10 +29,11 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/place-order" element={<PlaceOrder />} />
-        <Route path="/order" element={<Order />} />
+        <Route path="/orders" element={<Order />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={() => <h1>Page not found</h1>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

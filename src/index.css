@@ -10,6 +10,7 @@ a.active hr {
 
 * {
   font-family: Outfit;
+
 }
 
 .prata-regular {
@@ -18,10 +19,14 @@ a.active hr {
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 @media (max-width: 640px) {
   a.active {
     background-color: black;
     color: white;
-    border-bottom: 2px solid white;
   }
 }
